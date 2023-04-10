@@ -25,7 +25,7 @@ internal class Stereo
     }
 
     public void SetDvd()
-    { 
+    {
         Console.WriteLine(_name + " is set for Dvd input");
     }
 

@@ -21,7 +21,7 @@ internal class RemoteLoader
             new LightOnCommand(kitchenLight);
         var kitchenLightOff =
             new LightOffCommand(kitchenLight);
-        
+
         var ceilingFanOn =
             new CeilingFanOnCommand(ceilingFan);
         var ceilingFanOff =
@@ -30,14 +30,14 @@ internal class RemoteLoader
             new StereoOnWithCdCommand(stereo);
         var stereoOff =
             new StereoOffCommand(stereo);
-        
+
         remoteControl.SetCommand(0, livingRoomLightOn, livingRoomLightOff);
         remoteControl.SetCommand(1, kitchenLightOn, kitchenLightOff);
         remoteControl.SetCommand(2, ceilingFanOn, ceilingFanOff);
         remoteControl.SetCommand(3, stereoOnWithCd, stereoOff);
 
         Console.WriteLine(remoteControl.ToString());
-        
+
         remoteControl.OnButtonWasPressed(0);
         remoteControl.OffButtonWasPressed(0);
         remoteControl.OnButtonWasPressed(1);
@@ -46,6 +46,5 @@ internal class RemoteLoader
         remoteControl.OffButtonWasPressed(2);
         remoteControl.OnButtonWasPressed(3);
         remoteControl.OffButtonWasPressed(3);
-        
     }
 }

@@ -1,9 +1,8 @@
 namespace CommandPattern.Command.Commands;
 
-class NoCommand : ICommand
+internal class NoCommand : ICommand
 {
     public void Execute()
     {
-        
     }
 }

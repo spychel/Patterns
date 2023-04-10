@@ -1,35 +1,34 @@
-namespace AbstractFactory
+namespace AbstractFactory;
+
+internal abstract class Pizza
 {
-    abstract class Pizza
+    protected Cheese? cheese;
+    protected Clams? clam;
+    protected Dough? dough;
+    protected Pepperoni? pepperoni;
+    protected Sauce? sauce;
+    protected Veggies[]? veggies;
+    public string? Name { get; set; }
+
+    public abstract void Prepare();
+
+    private void Bake()
     {
-        public String? Name { get; set; }
-        protected Dough? dough;
-        protected Sauce? sauce;
-        protected Veggies[]? veggies;
-        protected Cheese? cheese;
-        protected Pepperoni? pepperoni;
-        protected Clams? clam;
+        Console.WriteLine("Bake for 25 minutes at 350");
+    }
 
-        public abstract void Prepare();
+    private void Cut()
+    {
+        Console.WriteLine("Cutting the pizza into diagonal slices");
+    }
 
-        void Bake()
-        {
-            System.Console.WriteLine("Bake for 25 minutes at 350");
-        }
+    private void Box()
+    {
+        Console.WriteLine("Place pizza in official PizzaStore box");
+    }
 
-        void Cut()
-        {
-            System.Console.WriteLine("Cutting the pizza into diagonal slices");
-        }
-
-        void Box()
-        {
-            System.Console.WriteLine("Place pizza in official PizzaStore box");
-        }
-
-        public String toString()
-        {
-            return Name;
-        }
+    public string toString()
+    {
+        return Name;
     }
 }

@@ -1,7 +1,7 @@
-class FlyWithWings : IFlyBehavior
+internal class FlyWithWings : IFlyBehavior
 {
     public void Fly()
     {
-        System.Console.WriteLine("I’m flying!!");
+        Console.WriteLine("I’m flying!!");
     }
 }

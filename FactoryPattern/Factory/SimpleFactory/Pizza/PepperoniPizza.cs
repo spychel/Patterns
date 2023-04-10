@@ -1,4 +1,4 @@
-class PepperoniPizza : Pizza
+internal class PepperoniPizza : Pizza
 {
     public override void Bake()
     {

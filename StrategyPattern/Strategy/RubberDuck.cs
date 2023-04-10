@@ -1,4 +1,4 @@
-public class RubberDuck : Duck 
+public class RubberDuck : Duck
 {
     public RubberDuck()
     {

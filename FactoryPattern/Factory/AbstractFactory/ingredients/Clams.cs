@@ -1,6 +1,5 @@
-namespace AbstractFactory
+namespace AbstractFactory;
+
+internal class Clams
 {
-    internal class Clams
-    {
-    }
 }

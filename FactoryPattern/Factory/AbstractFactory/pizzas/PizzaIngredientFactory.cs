@@ -1,6 +1,5 @@
-namespace AbstractFactory
+namespace AbstractFactory;
+
+public class PizzaIngredientFactory
 {
-    public class PizzaIngredientFactory
-    {
-    }
 }

@@ -8,8 +8,9 @@ internal class StereoOnWithCdCommand : ICommand
 
     public StereoOnWithCdCommand(Stereo stereo)
     {
-        this._stereo = stereo;
+        _stereo = stereo;
     }
+
     public void Execute()
     {
         _stereo.On();

@@ -1,4 +1,4 @@
-enum PizzaType
+internal enum PizzaType
 {
     CHEESE,
     PEPPERONI,

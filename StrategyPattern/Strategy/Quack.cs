@@ -1,7 +1,7 @@
-class Quack : IMakeSoundBehavior
+internal class Quack : IMakeSoundBehavior
 {
     public void MakeSound()
     {
-        System.Console.WriteLine("Quack Quack");
+        Console.WriteLine("Quack Quack");
     }
 }

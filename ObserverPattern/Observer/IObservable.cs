@@ -1,4 +1,3 @@
-
 public interface IObservable
 {
     void RegisterObserver(IObserver o);

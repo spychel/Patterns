@@ -1,6 +1,6 @@
-class PizzaStore
+internal class PizzaStore
 {
-    SimplePizzaFactory factory;
+    private readonly SimplePizzaFactory factory;
 
     public PizzaStore(SimplePizzaFactory factory)
     {

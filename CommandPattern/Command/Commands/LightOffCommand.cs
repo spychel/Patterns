@@ -8,7 +8,7 @@ internal class LightOffCommand : ICommand
 
     public LightOffCommand(Light light)
     {
-        this._light = light;
+        _light = light;
     }
 
     public void Execute()

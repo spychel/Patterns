@@ -1,8 +1,8 @@
 namespace AbstractFactory;
 
-class CheesePizza : Pizza
+internal class CheesePizza : Pizza
 {
-    PizzaIngredientFactory ingredientFactory;
+    private PizzaIngredientFactory ingredientFactory;
 
     public CheesePizza(PizzaIngredientFactory ingredientFactory)
     {
@@ -11,7 +11,7 @@ class CheesePizza : Pizza
 
     public override void Prepare()
     {
-        System.Console.WriteLine("Preparing " + Name);
+        Console.WriteLine("Preparing " + Name);
         // dough = ingredientFactory.createDough();
         // sauce = ingredientFactory.createSauce();
         // cheese = ingredientFactory.createCheese();

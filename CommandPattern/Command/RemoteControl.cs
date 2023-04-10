@@ -5,8 +5,8 @@ namespace CommandPattern.Command;
 
 internal class RemoteControl
 {
-    private readonly ICommand[] _onCommands;
     private readonly ICommand[] _offCommands;
+    private readonly ICommand[] _onCommands;
 
     public RemoteControl()
     {
@@ -41,7 +41,6 @@ internal class RemoteControl
         var stringBuff = new StringBuilder();
         stringBuff.Append("\n------ Remote Control -------\n");
         for (var i = 0; i < _onCommands.Length; i++)
-        {
             stringBuff.Append(
                 "[slot "
                 + i
@@ -51,7 +50,6 @@ internal class RemoteControl
                 + _offCommands[i].GetType().Name
                 + "\n"
             );
-        }
         return stringBuff.ToString();
     }
 }

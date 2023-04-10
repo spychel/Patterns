@@ -2,7 +2,7 @@ using CommandPattern.Command.Devices;
 
 namespace CommandPattern.Command.Commands;
 
-class LightOnCommand : ICommand
+internal class LightOnCommand : ICommand
 {
     private readonly Light _light;
 

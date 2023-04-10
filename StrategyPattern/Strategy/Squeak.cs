@@ -1,7 +1,7 @@
-class Squeak : IMakeSoundBehavior
+internal class Squeak : IMakeSoundBehavior
 {
     public void MakeSound()
     {
-        System.Console.WriteLine("Squeak");
+        Console.WriteLine("Squeak");
     }
 }
